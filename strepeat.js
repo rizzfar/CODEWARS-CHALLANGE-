@@ -7,5 +7,5 @@ function repeatStr (n, s) {
 }
 
 let coba = repeatStr(3, '*')
-console.log(coba)
+console.log(coba);
 
