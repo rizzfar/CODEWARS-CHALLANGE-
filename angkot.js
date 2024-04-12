@@ -26,12 +26,10 @@ class Angkot {
 
   penumpangTurun(namaPenumpang, ongkos, jarak) {
     for(let i = 0; this.penumpang.length; i++) {
-      if(this.penumpang[i] === namaPenumpang.toLowerCase()) {
-        if(jarak !== 0) {
-          this.uangKas += (ongkos * jarak);
-          this.penumpang.splice(i, 1);
-          return `Penumpang ${namaPenumpang} telah turun. Uang kas bertambah sebesar ${ongkos}.`;
-        }
+      if(this.penumpang[i] === namaPenumpang.toLowerCase() || jarak !== 0) {
+        this.uangKas += (ongkos * jarak);
+        this.penumpang.splice(i, 1);
+        return `Penumpang ${namaPenumpang} telah turun. Uang kas bertambah sebesar ${ongkos}.`;
       }
     }
 
