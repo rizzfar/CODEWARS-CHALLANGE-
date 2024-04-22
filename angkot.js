@@ -29,7 +29,7 @@ class Angkot {
       if(this.penumpang[i] === namaPenumpang.toLowerCase() || jarak !== 0) {
         this.uangKas += (ongkos * jarak);
         this.penumpang.splice(i, 1);
-        return `Penumpang ${namaPenumpang} telah turun. Uang kas bertambah sebesar ${ongkos}.`;
+          return `Penumpang ${namaPenumpang} telah turun. Uang kas bertambah sebesar ${ongkos}.`;
       }
     }
 

@@ -20,5 +20,5 @@
 
 
 const arraySaya = ['Rizky'];
-arraySaya.unshift('Rizky');
+arraySaya.
 console.log(arraySaya)

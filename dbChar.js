@@ -1,13 +1,10 @@
-const doubleChar = (str) => {
-  let hasil = '';
-
+const repeatDoubleStr = (str) => {
+  let result = '';
   for(let i = 0; i < str.length; i++) {
-    hasil = hasil + str[i] + str[i];
+    result += str[i] + str[i];
   }
-
-  return hasil;
+  return str 
 }
 
-const percobaan = doubleChar('hello world');
-
-console.log(percobaan);
+const coba = repeatDoubleStr('hello');
+console.log(coba)
